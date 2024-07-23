@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Biharmonic Coordinates and their Derivatives for Triangular 3D Cages</title>
+		<link rel="canonical" href="https://eliemichel.github.io/BiharmonicCoords" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body class="h-entry">
+		<h1 class="p-name"><a class="u-url" href="https://eliemichel.github.io/BiharmonicCoords">Biharmonic Coordinates and their Derivatives for Triangular 3D Cages</a></h1>
+
+		<div class="s-venue">
+			ACM Transaction on Graphics (SIGGRAPH '<time class="dt-published" datetime="2024-07-22 12:00:00">24</time> Conference Proceedings)
+		</div>
+
+		<div class="s-authorlist">
+			<div class="p-author h-card">
+				<a class="p-name u-url" href="https://research.adobe.com/person/jean-thiery">Jean-Marc Thiery</a>
+				<ul>
+					<li><a class="p-org h-card" href="https://research.adobe.com/">Adobe, France</a></li>
+				</ul>
+			</div>
+
+			<div class="p-author h-card">
+				<a class="p-name u-url" href="https://research.adobe.com/person/elie-michel">Élie Michel</a>
+				<ul>
+					<li><a class="p-org h-card" href="https://research.adobe.com/">Adobe, France</a></li>
+				</ul>
+			</div>
+
+			<div class="p-author h-card">
+				<a class="p-name u-url" href="https://jiongchen.github.io">Jiong Chen</a>
+				<ul>
+					<li><a class="p-org h-card" href="https://www.inria.fr/fr/centre-inria-de-saclay">Inria, France</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<main>
+			<figure>
+				<img alt="Teaser image" src="images/teaser.jpg" />
+				<figcaption>While Mean-value coordinates interpolate the Dirichlet boundary condition exactly (i.e., the deformation is interpolant on the cage surface) and allow artists to control the shape precisely near the cage, they lead to poor deformations, as the cage deformation is by nature continuous only across its edges. Being based on harmonic functions, that by definition can fit only one type of boundary condition at a time, Green coordinates follow only loosely the cage deformation, even on rather simple cage edits. We introduce biharmonic coordinates for triangular cages in 3D, that allow obtaining biharmonic 3D deformations that conform better to both Dirichlet (position) and Neumann (normal derivative) boundary conditions. By constraining the normal derivative stretch in this example, the deformed shape remains in the center of the deformed cage.</figcaption>
+			</figure>
+
+			<ul class="s-download-links">
+				<li><a href="documents/thiery24biharmonic.pdf">Paper (19 MB)</a></li>
+				<li><a href="documents/thiery24biharmonic_lowres.pdf">Lowres Paper (1.7 MB)</a></li>
+				<li><a href="https://gitlab.com/jthiery/biharmonic3dcoordinates_siggraph2024">Source Code</a></li>
+			</ul>
+
+			<section>
+				<h2>Abstract</h2>
+				<p class="p-summary s-content">
+As a natural extension to harmonic maps, biharmonic maps have been found to outperform them in the context of, e.g., 2D planar deformations. However, 3D biharmonic coordinates and their derivatives have remained unexplored. In this work, we derive closed-form expressions for 3D biharmonic coordinates and their derivatives for triangular cages. These formulas enable precise and numerically stable computation of biharmonic coordinates in 3D, thus filling a missing component in the family of boundary interpolation schemes. Among the potential applications, we demonstrate our extension to triangular cage deformation enhancing existing Green coordinates with increased expressivity, and their usage for variational surface deformation providing an enriched subspace. Moreover, those lead to closed-form expressions for the recent Somigliana coordinates, which are revealed as a composition of Green coordinates and derivatives of our biharmonic coordinates. This relationship facilitates efficient and precise evaluation of Somigliana coordinates, eliminating the need for ineffective quadrature rules.
+				</p>
+			</section>
+
+			<footer>&nbsp;</footer>
+		</main>
+	</body>
+</html>
